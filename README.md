@@ -1,2 +1,2 @@
 React Budget App
-<a href="https://marshitsky.github.io/react-budget-app/" target="_blank"></a>
+<a href="https://marshitsky.github.io/react-budget-app/" target="_blank">View demo</a>
