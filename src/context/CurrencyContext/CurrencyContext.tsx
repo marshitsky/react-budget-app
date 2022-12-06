@@ -1,6 +1,16 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 import { Currency } from "../../config";
-import { ICurrencyContext, ICurrencyContextProviderProps } from "../../types/types";
+import { ICurrency } from "../../types";
+
+interface ICurrencyContextProviderProps {
+  children: ReactNode;
+}
+
+interface ICurrencyContext {
+  currentCurrency: ICurrency;
+  currencies: ICurrency[];
+  setNewCurrency: (option: ICurrency) => void;
+}
 
 export const CurrencyContext = createContext<ICurrencyContext>({} as ICurrencyContext);
 

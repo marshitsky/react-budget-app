@@ -2,4 +2,6 @@ import styled from "styled-components";
 
 const StyledExpenses = styled.div``;
 
-export { StyledExpenses };
+const EmptyText = styled.p``;
+
+export { StyledExpenses, EmptyText };

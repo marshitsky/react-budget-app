@@ -1,5 +1,3 @@
-export enum Currency {
-  USD = "$",
-  EUR = "€",
-  GBP = "£",
-}
+import { Currency } from "./currency";
+
+export { Currency };

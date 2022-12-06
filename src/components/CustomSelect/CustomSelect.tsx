@@ -1,5 +1,5 @@
 import Select, { SingleValue } from "react-select";
-import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
+import { useCurrencyContext } from "../../context";
 
 export const CustomSelect = () => {
   const { currencies, currentCurrency, setNewCurrency } = useCurrencyContext();

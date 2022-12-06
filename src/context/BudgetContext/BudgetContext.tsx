@@ -1,5 +1,13 @@
-import { createContext, useContext, useState } from "react";
-import { IBudgetContextProviderProps, IBudgetContext } from "../../types/types";
+import { createContext, ReactNode, useContext, useState } from "react";
+
+interface IBudgetContextProviderProps {
+  children: ReactNode;
+}
+
+interface IBudgetContext {
+  budget: number;
+  setNewBudget: (value: number) => void;
+}
 
 const BudgetContext = createContext<IBudgetContext>({} as IBudgetContext);
 

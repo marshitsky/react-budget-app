@@ -1,10 +1,9 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Button } from "../Button/Button";
+import { Button, Title } from "../../components";
 import { useBudgetContext, useExpensesContext } from "../../context";
-import { IExpense } from "../../types/types";
+import { IExpense } from "../../types";
 import { v4 } from "uuid";
 import { StyledForm, StyledInputForm } from "./styles";
-import { Title } from "../Title/Title";
 
 export const Form = () => {
   const { setNewExpense } = useExpensesContext();

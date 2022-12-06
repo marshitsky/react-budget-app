@@ -1,6 +1,5 @@
 import { useBudgetContext, useCurrencyContext } from "../../context";
-import { useInput } from "../../hooks/useInput";
-import { useToggle } from "../../hooks/useToggle";
+import { useInput, useToggle } from "../../hooks";
 import { StyledBudget, StyledBtn, StyledInput, StyledText } from "./styles";
 
 export const BudgetCard = () => {

@@ -7,7 +7,7 @@ interface IProps {
   id: string;
 }
 
-export const ExpenseItem = ({ name, price, id }: IProps) => {
+export const ExpensesListItem = ({ name, price, id }: IProps) => {
   const {
     currentCurrency: { value },
   } = useCurrencyContext();
