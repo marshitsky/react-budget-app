@@ -7,9 +7,6 @@ interface IProps {
 }
 
 export const ExpensesList = ({ expensesList }: IProps) => {
-  if (!expensesList.length) {
-    return <EmptyText>Oooops 🙈</EmptyText>;
-  }
   return (
     <StyledList>
       {expensesList.map(({ name, price, id }) => (

@@ -8,10 +8,13 @@ export const RemainingCard = () => {
   const { budget } = useBudgetContext();
   const { expenses } = useExpensesContext();
   const remaining = budget - expenses.reduce((total, { price }) => total + +price, 0);
+  const isOverspent = remaining >= 0;
 
   return (
-    <StyledRemainingCard>
-      Remaining: {value} {remaining}
+    <StyledRemainingCard isOverspent={isOverspent}>
+      {isOverspent
+        ? `Remaining: ${value} ${remaining}`
+        : `Overspending by: ${value} ${Math.abs(remaining)}`}
     </StyledRemainingCard>
   );
 };

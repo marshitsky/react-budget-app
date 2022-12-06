@@ -19,9 +19,11 @@ export const Form = () => {
   } = useForm<IExpense>();
 
   const onSubmit: SubmitHandler<IExpense> = ({ name, price }) => {
-    if (budget > 0) {
+    if (budget) {
       setNewExpense({ name, price, id: v4() });
       reset();
+    } else {
+      alert("Enter budget");
     }
   };
 
