@@ -3,7 +3,7 @@ import { useExpensesContext } from "../../context";
 import { useInput } from "../../hooks";
 import { IExpense } from "../../types";
 import { ExpensesList, Title } from "../../components";
-import { StyledExpenses, EmptyText } from "./styles";
+import { StyledExpenses, EmptyText, StyledInput } from "./styles";
 
 export const Expenses = () => {
   const search = useInput();
@@ -19,7 +19,7 @@ export const Expenses = () => {
   return (
     <StyledExpenses>
       <Title text="Expenses" />
-      <input {...search} placeholder="search ..." />
+      <StyledInput {...search} placeholder="search ..." />
       {expenses.length ? (
         <ExpensesList expensesList={filteredExpenses} />
       ) : (

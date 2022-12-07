@@ -22,7 +22,7 @@ export const ExpensesListItem = ({ name, price, id }: IProps) => {
       <StyledItemBadge>
         {value} {price}
       </StyledItemBadge>
-      <StyledRemoveBtn onClick={handleDelete}>&times;</StyledRemoveBtn>
+      <StyledRemoveBtn onClick={handleDelete}></StyledRemoveBtn>
     </StyledExpensesListItem>
   );
 };
