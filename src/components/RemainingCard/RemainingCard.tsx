@@ -1,5 +1,5 @@
 import { useBudgetContext, useCurrencyContext, useExpensesContext } from "../../context";
-import { StyledRemainingCard } from "./styles";
+import { StyledRemainingCard, RemainingText } from "./styles";
 
 export const RemainingCard = () => {
   const {
@@ -12,9 +12,11 @@ export const RemainingCard = () => {
 
   return (
     <StyledRemainingCard isOverspent={isOverspent}>
-      {isOverspent
-        ? `Remaining: ${value} ${remaining}`
-        : `Overspending by: ${value} ${Math.abs(remaining)}`}
+      <RemainingText>
+        {isOverspent
+          ? `Remaining: ${value} ${remaining}`
+          : `Overspending by: ${value} ${Math.abs(remaining)}`}
+      </RemainingText>
     </StyledRemainingCard>
   );
 };

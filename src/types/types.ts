@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Currency } from "../config";
 
 interface ICurrency {

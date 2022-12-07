@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
+  place-self: center center;
   flex-direction: column;
-  max-width: 456px;
+  gap: 30px;
+  width: clamp(320px, 100%, 425px);
   min-height: 100vh;
-  margin: 20px auto;
+  padding: 30px 20px 53px 20px;
+  background-color: #ffffff;
 `;
 
 export { Wrapper };
