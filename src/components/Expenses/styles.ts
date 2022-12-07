@@ -13,7 +13,6 @@ const StyledInput = styled.input`
   border-radius: 10px;
   border: none;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-
   &::placeholder {
     color: #999999;
   }
@@ -21,8 +20,8 @@ const StyledInput = styled.input`
     outline: none;
   }
   @media (max-width: 390px) {
-    font-size: 12px;
     padding: 13px 10px;
+    font-size: 12px;
   }
 `;
 
