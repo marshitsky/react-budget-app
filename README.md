@@ -37,8 +37,8 @@ Simply enter your budget and make a list - the app will give you a total amount 
 display: flex;
 gap: 5px;
 ">
-<img src="./readme/screenshot.png" width=50%>
-<img src="./readme/screenshotFilled.png" width=50%>
+<img src="./readme/screenshot.png" width=35% height=95%>
+<img src="./readme/screenshotFilled.png" width=35% height=100%>
 <!-- ![Tips Calculator Screenshot ](./readme/screenshot.png) -->
 </div><br/>
 
@@ -48,6 +48,7 @@ gap: 5px;
 
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 
 ### Tools used
 
