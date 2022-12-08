@@ -19,6 +19,12 @@ export const StyledInputForm = styled.input`
   &:focus-visible {
     outline: none;
   }
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
   @media (max-width: 390px) {
     padding: 13px 10px;
     font-size: 12px;
