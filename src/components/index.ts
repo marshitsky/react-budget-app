@@ -6,7 +6,6 @@ import { Expenses } from "./Expenses";
 import { ExpensesList } from "./ExpensesList";
 import { ExpensesListItem } from "./ExpensesListItem";
 import { Form } from "./Form";
-import { Input } from "./Input";
 import { RemainingCard } from "./RemainingCard";
 import { SpentCard } from "./SpentCard";
 import { Title } from "./Title";
@@ -20,7 +19,6 @@ export {
   ExpensesList,
   ExpensesListItem,
   Form,
-  Input,
   RemainingCard,
   SpentCard,
   Title,

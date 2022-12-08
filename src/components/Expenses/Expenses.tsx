@@ -13,7 +13,9 @@ export const Expenses = () => {
 
   useEffect(() => {
     setFilteredExpenses(
-      expenses.filter((expense) => expense.name.toLowerCase().includes(search.value.toLowerCase())),
+      expenses.filter((expense) =>
+        expense.name.toLowerCase().includes(debouncedValue.toLowerCase()),
+      ),
     );
   }, [debouncedValue, expenses]);
 

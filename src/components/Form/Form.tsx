@@ -43,6 +43,7 @@ export const Form = () => {
         {...register("price", {
           required: "Price is required",
           maxLength: { value: 6, message: "Max 6 characters" },
+          valueAsNumber: true,
         })}
         type="number"
         placeholder="enter cost ..."

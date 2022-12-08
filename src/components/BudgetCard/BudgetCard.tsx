@@ -11,14 +11,14 @@ export const BudgetCard = () => {
 
   const inputBudget = useInput();
 
-  const [isBudgetActive, toogleBudgetActive] = useToggle(false);
+  const [isBudgetActive, toogleIsBudgetActive] = useToggle(true);
 
   const handleSave = () => {
     setNewBudget(+inputBudget.value);
-    toogleBudgetActive();
+    toogleIsBudgetActive();
   };
 
-  const handleEdit = () => toogleBudgetActive();
+  const handleEdit = () => toogleIsBudgetActive();
 
   return (
     <StyledBudget>

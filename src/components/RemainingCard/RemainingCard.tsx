@@ -7,7 +7,7 @@ export const RemainingCard = () => {
   } = useCurrencyContext();
   const { budget } = useBudgetContext();
   const { expenses } = useExpensesContext();
-  const remaining = budget - expenses.reduce((total, { price }) => total + +price, 0);
+  const remaining = budget - expenses.reduce((total, { price }) => total + price, 0);
   const isOverspent = remaining >= 0;
 
   return (
