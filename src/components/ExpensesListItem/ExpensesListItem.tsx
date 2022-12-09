@@ -1,13 +1,8 @@
 import { useCurrencyContext, useExpensesContext } from "../../context";
+import { IExpense } from "../../types";
 import { StyledItemBadge, StyledRemoveBtn, StyledItemText, StyledExpensesListItem } from "./styles";
 
-interface IProps {
-  name: string;
-  price: number;
-  id: string;
-}
-
-export const ExpensesListItem = ({ name, price, id }: IProps) => {
+export const ExpensesListItem = ({ name, price, id }: IExpense) => {
   const {
     currentCurrency: { value },
   } = useCurrencyContext();
