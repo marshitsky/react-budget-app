@@ -1,6 +1,6 @@
 import { useBudgetContext, useCurrencyContext } from "../../context";
 import { useInput, useToggle } from "../../hooks";
-import { StyledBudget, StyledBtn, StyledInput, StyledText } from "./styles";
+import { StyledBudgetCard, StyledInput, StyledBtn, StyledText } from "./styles";
 
 export const BudgetCard = () => {
   const { budget, setNewBudget } = useBudgetContext();
@@ -21,7 +21,7 @@ export const BudgetCard = () => {
   const handleEdit = () => toogleIsBudgetActive();
 
   return (
-    <StyledBudget>
+    <StyledBudgetCard>
       {isBudgetActive ? (
         <>
           <StyledInput {...inputBudget} placeholder="Enter Budget ..." type="number" />
@@ -35,6 +35,6 @@ export const BudgetCard = () => {
           <StyledBtn onClick={handleEdit}>Edit</StyledBtn>
         </>
       )}
-    </StyledBudget>
+    </StyledBudgetCard>
   );
 };

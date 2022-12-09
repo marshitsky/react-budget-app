@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledBudget = styled.div`
+const StyledBudgetCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,10 +8,10 @@ export const StyledBudget = styled.div`
   padding: 0 20px;
   background-color: #7cc6fe;
   border-radius: 10px;
-  overflow: auto;
 `;
 
-export const StyledInput = styled.input`
+const StyledInput = styled.input`
+  width: 100%;
   font-size: 20px;
   font-weight: 500;
   color: #000000;
@@ -34,7 +34,7 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledBtn = styled.button`
+const StyledBtn = styled.button`
   padding: 5px 20px;
   background-color: #fff;
   border: none;
@@ -53,10 +53,12 @@ export const StyledBtn = styled.button`
   }
 `;
 
-export const StyledText = styled.p`
+const StyledText = styled.p`
   font-size: 20px;
   font-weight: 500;
   @media (max-width: 390px) {
     font-size: 16px;
   }
 `;
+
+export { StyledBudgetCard, StyledInput, StyledBtn, StyledText };

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const StyledForm = styled.form`
+const StyledForm = styled.form`
   display: grid;
   grid-template-rows: repeat(1fr, 1fr, 1fr);
   gap: 20px;
 `;
 
-export const StyledInputForm = styled.input`
+const StyledInputForm = styled.input`
   padding-left: 15px;
   height: 50px;
   font-size: 15px;
@@ -30,3 +30,11 @@ export const StyledInputForm = styled.input`
     font-size: 12px;
   }
 `;
+
+const ErrorMessage = styled.p`
+  margin-top: -15px;
+  font-size: 13px;
+  color: red;
+`;
+
+export { StyledForm, StyledInputForm, ErrorMessage };

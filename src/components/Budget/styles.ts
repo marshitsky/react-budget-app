@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const BudgetWrapper = styled.div`
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 `;
 
 const StyledBudgetHeader = styled.div`

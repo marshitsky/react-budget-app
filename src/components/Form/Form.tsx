@@ -3,7 +3,7 @@ import { Button, Title } from "../../components";
 import { useBudgetContext, useExpensesContext } from "../../context";
 import { IExpense } from "../../types";
 import { v4 } from "uuid";
-import { StyledForm, StyledInputForm } from "./styles";
+import { StyledForm, StyledInputForm, ErrorMessage } from "./styles";
 
 export const Form = () => {
   const { setNewExpense } = useExpensesContext();
@@ -31,24 +31,24 @@ export const Form = () => {
       <Title text="Add expense" />
       <StyledInputForm
         {...register("name", {
-          required: "Expense is required",
+          required: "* expense is required",
           minLength: { value: 2, message: "Min 2 characters" },
           maxLength: { value: 15, message: "Max 15 characters" },
         })}
         type="text"
         placeholder="enter name ..."
       />
-      {errors.name && <p>{errors.name.message}</p>}
+      {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
       <StyledInputForm
         {...register("price", {
-          required: "Price is required",
+          required: "* price is required",
           maxLength: { value: 6, message: "Max 6 characters" },
           valueAsNumber: true,
         })}
         type="number"
         placeholder="enter cost ..."
       />
-      {errors.price && <p>{errors.price.message}</p>}
+      {errors.price && <ErrorMessage>{errors.price.message}</ErrorMessage>}
       <Button children="Done" />
     </StyledForm>
   );
