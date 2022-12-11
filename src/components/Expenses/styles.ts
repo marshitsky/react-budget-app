@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 const StyledExpenses = styled.div`
   display: grid;
-  grid-template-rows: repeat(1fr, 1fr, 1fr);
+  grid-template-rows: 5% 5% auto;
   gap: 30px;
+  height: 275px;
 `;
 
 const StyledInput = styled.input`
